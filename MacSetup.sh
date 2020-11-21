@@ -78,6 +78,7 @@ tfenv use 0.12.0
 brew install openshift-cli
 brew install kubectl
 brew install helm
+brew install jq
 
 #brew cask install minishift
 #brew cask install minikube
