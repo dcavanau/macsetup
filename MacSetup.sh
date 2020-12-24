@@ -4,27 +4,28 @@
 ## Accept license
 ## use xcode-select -p to check whether Xcode is installed
 xcode-select --install
-sudo xcodebuild -license
+## sudo xcodebuild -license
 
 ##------------- Installing Homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 ##------------- Refresh repositories
 brew update
-brew tap caskroom/cask
+brew tap homebrew/cask
 
 ##------------- Automation section
-brew cask install alfred
+brew install --cask alfred
 
 ##------------- File Hosting Services
-brew cask install google-backup-and-sync
+brew install --cask google-backup-and-sync
 
 ##------------- Browsers
-brew cask install google-chrome
+brew install --cask google-chrome
 
 ##------------- Drawings
-brew cask install drawio
+brew install --cask drawio
 
 ##------------- Programming languages
 brew install go
@@ -40,7 +41,7 @@ git config --global user.email "dcavanau@us.ibm.com"
 git config --global github.user "dcavanau"
 # git config --global core.editor "atom --wait"
 git config --global core.editor "code --wait"
-brew cask install github
+brew install --cask github
 
 mkdir ~/git
 cd ~/git
@@ -57,16 +58,16 @@ brew link node@10 --force
 
 ## ------------ Tekton
 brew tap tektoncd/tools
-brew install tektoncd/tools/tektoncd-cli
+brew install tektoncd-cli
 
 ##------------- Cloud tools
-brew cask install docker
+brew install --cask docker
 brew install docker-completion
 
-#brew cask install virtualbox
-#brew cask install virtualbox-extension-pack
+#brew install --cask virtualbox
+#brew install --cask virtualbox-extension-pack
 
-#brew cask install vagrant
+#brew install --cask vagrant
 ## auto update virtual box guest additions
 #vagrant plugin install vagrant-vbguest
 #vagrant plugin install vagrant-scp
@@ -80,26 +81,26 @@ brew install kubectl
 brew install helm
 brew install jq
 
-#brew cask install minishift
-#brew cask install minikube
+#brew install --cask minishift
+#brew install --cask minikube
 
 #brew install prometheus
 #brew install grafana
 #brew services start prometheus
 #brew services start grafana
 
-brew cask install the-unarchiver
+brew install --cask the-unarchiver
 brew install wget
 
 ##------------- IBM Cloud CLIs
 curl -sL https://ibm.biz/idt-installer | bash
 
 ##------------- Visual Studio code
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 
 ##------------- Atom, Packages, Theme & Keybindings
 # Appplication
-#brew cask install atom
+#brew install --cask atom
 # Packages
 #apm install ascii-unicode-escape
 #apm install atom-beautify
@@ -115,7 +116,7 @@ brew cask install visual-studio-code
 #apm install split-diff
 
 ##------------- Terminal
-brew cask install iterm2
+brew install --cask iterm2
 bash -c  "$(curl -sLo- https://git.io/vQgMr)"
 
 ##------------- Applications from Mac App store
