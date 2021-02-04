@@ -57,7 +57,6 @@ brew install node@10
 brew link node@10 --force
 
 ## ------------ Tekton
-brew tap tektoncd/tools
 brew install tektoncd-cli
 
 ##------------- Cloud tools
