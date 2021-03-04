@@ -48,8 +48,8 @@ cd ~/git
 git clone https://github.ibm.com/CASE/openshift-migration-guide.git
 git clone https://github.com/ibm-garage-cloud/ibm-garage-iteration-zero.git
 git clone https://github.com/IBM/ibm-garage-tekton-tasks.git
-git clone https://github.ibm.com/dcavanau/cp4mcm-cert-admin.git
-git clone https://github.ibm.com/demohub/cp4mcm-cert.git
+#git clone https://github.ibm.com/dcavanau/cp4mcm-cert-admin.git
+#git clone https://github.ibm.com/demohub/cp4mcm-cert.git
 cd ..
 
 ## ------------ Nodejs
@@ -60,16 +60,8 @@ brew link node@10 --force
 brew install tektoncd-cli
 
 ##------------- Cloud tools
-brew install --cask docker
+brew install docker
 brew install docker-completion
-
-#brew install --cask virtualbox
-#brew install --cask virtualbox-extension-pack
-
-#brew install --cask vagrant
-## auto update virtual box guest additions
-#vagrant plugin install vagrant-vbguest
-#vagrant plugin install vagrant-scp
 
 #brew install terraform
 brew install tfenv
@@ -80,13 +72,6 @@ brew install kubectl
 brew install helm
 brew install jq
 
-#brew install --cask minishift
-#brew install --cask minikube
-
-#brew install prometheus
-#brew install grafana
-#brew services start prometheus
-#brew services start grafana
 
 brew install --cask the-unarchiver
 brew install wget
@@ -96,23 +81,6 @@ curl -sL https://ibm.biz/idt-installer | bash
 
 ##------------- Visual Studio code
 brew install --cask visual-studio-code
-
-##------------- Atom, Packages, Theme & Keybindings
-# Appplication
-#brew install --cask atom
-# Packages
-#apm install ascii-unicode-escape
-#apm install atom-beautify
-#apm install color-picker
-#apm install dictionary
-#apm install file-icons
-#apm install highlight-selected
-#apm install language-terraform
-#apm install language-markdown
-#apm install ide-json
-#apm install line-ending-converter
-#apm install markdown-preview-plus
-#apm install split-diff
 
 ##------------- Terminal
 brew install --cask iterm2
